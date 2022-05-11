@@ -1,25 +1,66 @@
 body {
-    background-color: rgb(252, 252, 150)
+    background-color: #99ebff
+}
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+h3 {
+    text-align: center;
+}
+h4 {
+    margin: 10px;
 }
 header {
     background-image: url(./HeaderBackground.jpg);
     background-size: cover;
     /* background-position: left; */
     opacity: 90%;
+    height: 100%;
 }
-h1, h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
+
+hero {
+    display: flex;
 }
+
 aside {
-    margin-top: 0;
+    padding: 10px;
     width: 340px; 
     height: 800px;
-    float: inline-start;
-    background-image: linear-gradient(to right, rgb(78, 179, 179), rgb(200, 219, 170))
+    /* float: left; */
+    background-image: linear-gradient(to left, rgb(102, 232, 255), rgb(255, 255, 255))
     /* border: solid 1px rgb(136, 136, 0);
     border-radius: 5px; */
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+.center p {
+    margin: 0;
+}
+.period {
+    /* padding-left: 20px; */
+    color:#002291;
+    font-weight: 700;
+}
+.firmName {
+    font-weight: 700;
+}
+.info {
+    padding-left: 20px;
+}
+.position {
+    margin-right: 10px;
+    font-weight: 700;
+}
+li {
+    list-style-type: "- ";
 }
 .techStack {
 background-color: rgba(0, 27, 150, 0.5);
