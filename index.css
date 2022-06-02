@@ -138,9 +138,27 @@ p.skills-title {
     line-height: 1.4;
 }
 .contacts {
+    margin-top: 0;
+    padding-left: 40px;
     font-size: large;
     list-style: none;
     line-height: 1.4;
+}
+.contacts li {
+    padding-left: 40px;
+    padding-bottom: 10px;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    justify-content: space-around;
+}
+.socials li{
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 .in_process {
     margin-left: 10px;
