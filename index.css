@@ -14,7 +14,7 @@ h4 {
     margin: 10px;
 }
 li {
-    list-style-type: "- ";
+    
 }
 header {
     background-image: url(./HeaderBackground.jpg);
@@ -113,4 +113,14 @@ background-color: rgba(0, 27, 150, 0.5);
 p.contacts-title,
 p.skills-title {
     margin: 0;
+}
+.hardskills,
+.softskills,
+.languages {
+    list-style-type: "- ";
+    line-height: 1.2;
+}
+.contacts {
+    list-style: none;
+        line-height: 1.4;
 }
