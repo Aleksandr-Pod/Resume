@@ -13,8 +13,8 @@ h3 {
 h4 {
     margin: 10px;
 }
-li {
-    
+a {
+    text-decoration: none;
 }
 header {
     background-image: url(./HeaderBackground.jpg);
@@ -70,25 +70,40 @@ aside {
 .project_card:hover {
     background-color: burlywood;
 }
+.work_list {
+    margin: 0;
+    padding: 0;
+}
+.work_list li{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
 .period {
-    padding: 0 20px;
+    /* margin: 5px; */
+    padding: 5px 20px;
     color: rgb(85, 85, 85);
     font-weight: 700;
     border: 1px solid gray;
     border-top: 1px solid white;
 }
 .firmName {
-    font-weight: 700;
+    font-size: larger;
+    font-weight: 400;
 }
 .info {
-    padding-left: 20px;
+    text-align: center;
+    /* padding-left: 20px; */
 }
 .position {
     padding-left: 20px;
     padding-top: 5px;
-    font-weight: 700;
+    font-size: large;
+    /* font-weight: 700; */
     line-height: 1.5;
 }
+
+
 
 .techStack {
 background-color: rgba(0, 27, 150, 0.5);
@@ -112,15 +127,21 @@ background-color: rgba(0, 27, 150, 0.5);
 }
 p.contacts-title,
 p.skills-title {
+    font-size: large;
     margin: 0;
 }
 .hardskills,
 .softskills,
 .languages {
+    font-size: large;
     list-style-type: "- ";
-    line-height: 1.2;
+    line-height: 1.4;
 }
 .contacts {
+    font-size: large;
     list-style: none;
-        line-height: 1.4;
+    line-height: 1.4;
+}
+.in_process {
+    margin-left: 10px;
 }
