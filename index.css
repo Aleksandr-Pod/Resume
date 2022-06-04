@@ -16,6 +16,9 @@ h4 {
 a {
     text-decoration: none;
 }
+a:hover {
+    scale: 1.1;
+}
 header {
     background-image: url(./HeaderBackground.jpg);
     background-size: cover;
@@ -88,12 +91,12 @@ aside {
     border-top: 1px solid white;
 }
 .firmName {
+    padding-left: 20px;
     font-size: larger;
-    font-weight: 400;
 }
 .info {
     text-align: center;
-    /* padding-left: 20px; */
+    padding-top: 10px;
 }
 .position {
     padding-left: 20px;
@@ -102,12 +105,8 @@ aside {
     /* font-weight: 700; */
     line-height: 1.5;
 }
-
-
-
 .techStack {
 background-color: rgba(0, 27, 150, 0.5);
-
 }
 .photo {
     display: block;
@@ -115,9 +114,7 @@ background-color: rgba(0, 27, 150, 0.5);
 }
 .subSection {
     width: 100%;
-}
-.subSection ul {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .summary {
     margin: 10px auto;
@@ -130,36 +127,36 @@ p.skills-title {
     font-size: large;
     margin: 0;
 }
+.contacts {
+    margin: 0 0 0 80px;
+    padding: 0;
+    font-size: large;
+    list-style: none;
+    line-height: 1.4;
+}
+.contacts li {
+    text-align: center;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+.socials li {
+    padding: 5px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.in_process {
+    margin-left: 10px;
+}
 .hardskills,
 .softskills,
 .languages {
     font-size: large;
     list-style-type: "- ";
     line-height: 1.4;
-}
-.contacts {
-    margin-top: 0;
-    padding-left: 40px;
-    font-size: large;
-    list-style: none;
-    line-height: 1.4;
-}
-.contacts li {
-    padding-left: 40px;
-    padding-bottom: 10px;
-}
-.socials {
-    display: flex;
-    flex-direction: row;
-    padding-right: 40px;
-    justify-content: space-around;
-}
-.socials li{
-    padding: 5px;
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-.in_process {
-    margin-left: 10px;
 }
