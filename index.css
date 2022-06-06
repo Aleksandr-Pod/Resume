@@ -71,7 +71,7 @@ aside {
     text-decoration: none;
 }
 .project_card:hover {
-    background-color: burlywood;
+    background-color: rgb(255, 214, 161);
 }
 .work_list {
     margin: 0;
@@ -145,11 +145,13 @@ p.skills-title {
 }
 .socials li {
     padding: 5px;
-    background-color: white;
+    background-color: antiquewhite;
     border: 1px solid gray;
     border-radius: 5px;
 }
-
+.socials li:hover {
+    background-color: rgb(255, 214, 161);
+}
 .in_process {
     margin-left: 10px;
 }
