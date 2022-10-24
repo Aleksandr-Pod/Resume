@@ -66,6 +66,7 @@ aside {
 .objectives p {
     margin: 0;
 }
+
 .project_list {
     display: flex;
     flex-wrap: wrap;
@@ -75,10 +76,12 @@ aside {
     padding: 0;
 }
 .project_card {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 350px;
+    height: 100%;
     margin: 10px;
     padding: 5px;
     background-color: antiquewhite;
@@ -87,19 +90,22 @@ aside {
     line-height: 1.5;
     text-decoration: none;
 }
-.about {
-    text-align: center;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-}
+
 .project_card:hover {
     background-color: rgb(255, 214, 161);
 }
-.project_card:hover .about{
-    width: 100%;
-    height: 100%;
-    overflow:auto;
+
+.about {
+    text-align: center;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.5s linear;
+}
+.project_card:hover .about {
+    max-height: 100px;
+    opacity: 100%;
+    transform: translateY(0);
 }
 .work_list {
     margin: 0;
@@ -189,4 +195,12 @@ p.skills-title {
     font-size: large;
     list-style-type: "- ";
     line-height: 1.4;
+    color: inherit;
+    transition: all 0.2s liner;
+}
+.hardskills li:hover,
+.softskills li:hover,
+.languages li:hover {
+    font-weight: 700;
+    color: orangered;
 }
