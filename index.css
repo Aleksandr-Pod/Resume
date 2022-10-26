@@ -103,21 +103,21 @@ aside {
     transition: all 0.5s linear;
 }
 .project_card:hover .about {
-    max-height: 100px;
+    max-height: 150px;
     opacity: 100%;
     transform: translateY(0);
 }
-.work_list {
+.work_list, .education {
     margin: 0;
     padding: 0;
 }
-.work_list li{
+.work_list li,
+.education li{
     margin: 10px;
     padding: 10px;
     list-style: none;
 }
 .period {
-    /* margin: 5px; */
     padding: 5px 20px;
     color: rgb(85, 85, 85);
     font-weight: 700;
@@ -136,7 +136,6 @@ aside {
     padding-left: 20px;
     padding-top: 5px;
     font-size: large;
-    /* font-weight: 700; */
     line-height: 1.5;
 }
 .techStack {
@@ -185,6 +184,7 @@ p.skills-title {
 }
 .socials li:hover {
     background-color: rgb(255, 214, 161);
+    box-shadow: gray 5px 5px;
 }
 .in_process {
     margin-left: 10px;
