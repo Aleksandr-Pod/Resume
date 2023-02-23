@@ -6,7 +6,7 @@
 body {
     margin: 0;
     width: 100vw;
-    background-color: hsl(0, 100%, 99%);
+    /* background-color: hsl(0, 100%, 99%); */
 }
 h1,
 h2 {
@@ -130,10 +130,10 @@ aside {
 }
 .info {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 16px;
 }
 .position {
-    padding-left: 210px;
+    padding-left: 20px;
     padding-top: 5px;
     font-size: large;
     line-height: 1.5;
