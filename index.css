@@ -1,206 +1,216 @@
 ::before,
 ::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    width: 100vw;
-    /* background-color: hsl(0, 100%, 99%); */
+  margin: 0;
+  width: 100vw;
+  /* background-color: hsl(0, 100%, 99%); */
 }
 h1,
 h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
 }
 h3 {
-    text-align: center;
+  text-align: center;
 }
 h4 {
-    margin: 10px;
+  margin: 10px;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
-@media screen and (max-width: 767px){
-    header {
-        width: 767px;
-    }
+@media screen and (max-width: 767px) {
+  header {
+    width: 767px;
+  }
+}
+@font-face {
+  font-family: pristina;
+  src: url("./PRISTINA.TTF");
+}
+@font-face {
+  font-family: californianFB;
+  src: url("./CALIF.TTF");
 }
 header {
-    margin-left: -2px;
-    background-image: url(./HeaderBackground.jpg);
-    background-size: cover;
-    opacity: 90%;
-    height: 100%;
+  margin-left: -2px;
+  background-image: url(./HeaderBackground.jpg);
+  background-size: cover;
+  opacity: 90%;
+  height: 100%;
 }
 
 hero {
-    display: flex;
-    justify-content: space-around;
-    max-width: 1100px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 767px){
-    hero {
-        width: 767px;
-    }
+@media screen and (max-width: 767px) {
+  hero {
+    width: 767px;
+  }
 }
 aside {
-    padding: 10px;
-    max-width: 320px;
-    background-image: linear-gradient(to left, rgb(180, 180, 180), rgb(255, 255, 255))
+  padding: 10px;
+  max-width: 320px;
+  background-image: linear-gradient(to left, rgb(180, 180, 180), rgb(255, 255, 255));
 }
 .objectives {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 .objectives p {
-    margin: 0;
+  margin: 0;
 }
 
 .project_list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 .project_card {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 350px;
-    height: 100%;
-    margin: 10px;
-    padding: 5px;
-    background-color: antiquewhite;
-    border: 1px solid gray;
-    border-radius: 5px;
-    line-height: 1.5;
-    text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  padding: 5px;
+  background-color: antiquewhite;
+  border: 1px solid gray;
+  border-radius: 5px;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
 .project_card:hover {
-    background-color: rgb(255, 214, 161);
+  background-color: rgb(255, 214, 161);
 }
 
 .about {
-    text-align: center;
-    max-height: 0;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 0.5s linear;
+  text-align: center;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 0.5s linear;
 }
 .project_card:hover .about {
-    max-height: 150px;
-    opacity: 100%;
-    transform: translateY(0);
+  max-height: 150px;
+  opacity: 100%;
+  transform: translateY(0);
 }
-.work_list, .education {
-    margin: 0;
-    padding: 0;
+.work_list,
+.education {
+  margin: 0;
+  padding: 0;
 }
 .work_list li,
-.education li{
-    margin: 10px;
-    padding: 10px;
-    list-style: none;
+.education li {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
 }
 .period {
-    padding: 5px 20px;
-    color: rgb(85, 85, 85);
-    font-weight: 700;
-    border: 1px solid gray;
-    border-top: 1px solid white;
+  padding: 5px 20px;
+  color: rgb(85, 85, 85);
+  font-weight: 700;
+  border: 1px solid gray;
+  border-top: 1px solid white;
 }
 .firmName {
-    padding-left: 20px;
-    font-size: larger;
+  padding-left: 20px;
+  font-size: larger;
 }
 .info {
-    text-align: center;
-    padding-top: 16px;
+  text-align: center;
+  padding-top: 16px;
 }
 .position {
-    padding-left: 20px;
-    padding-top: 5px;
-    font-size: large;
-    line-height: 1.5;
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: large;
+  line-height: 1.5;
 }
 .techStack {
-background-color: rgba(0, 27, 150, 0.5);
+  background-color: rgba(0, 27, 150, 0.5);
 }
 .photo {
-    display: block;
-    margin: 0 auto 10px;
+  display: block;
+  margin: 0 auto 10px;
 }
 .subSection {
-    width: 100%;
-    margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 .summary {
-    margin: 10px auto;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.5;
+  font-family: californianFB;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5;
 }
 p.contacts-title,
 p.skills-title {
-    font-size: large;
-    margin: 0;
+  font-size: large;
+  margin: 0;
 }
 .contacts {
-    margin: 0 0 0 80px;
-    padding: 0;
-    font-size: large;
-    list-style: none;
-    line-height: 1.4;
+  margin: 0 0 0 80px;
+  padding: 0;
+  font-size: large;
+  list-style: none;
+  line-height: 1.4;
 }
 .contacts li {
-    text-align: center;
+  text-align: center;
 }
 .socials {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  justify-content: space-around;
 }
 .socials li {
-    padding: 5px;
-    background-color: antiquewhite;
-    border: 1px solid gray;
-    border-radius: 5px;
+  padding: 5px;
+  background-color: antiquewhite;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 .socials li:hover {
-    background-color: rgb(255, 214, 161);
-    box-shadow: gray 5px 5px;
+  background-color: rgb(255, 214, 161);
+  box-shadow: gray 5px 5px;
 }
 .in_process {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 .hardskills,
 .softskills,
 .languages {
-    font-size: large;
-    list-style-type: "- ";
-    line-height: 1.4;
-    color: inherit;
-    transition: all 0.2s liner;
+  font-size: large;
+  list-style-type: "- ";
+  line-height: 1.4;
+  color: inherit;
+  transition: all 0.2s liner;
 }
 .hardskills li:hover,
 .softskills li:hover,
 .languages li:hover {
-    font-weight: 700;
-    color: orangered;
+  font-weight: 700;
+  color: orangered;
 }
